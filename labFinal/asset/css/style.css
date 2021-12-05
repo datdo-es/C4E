@@ -117,7 +117,9 @@ header{
     flex-wrap: nowrap;
     align-items: center;
 }
-
+.pages .navigation {
+    margin: auto;
+}
 .navigation ul{
     margin: 0;
     padding: 0;
@@ -257,7 +259,7 @@ li a {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
 }   
 .bannerFooter img{
     padding: 0;
@@ -719,7 +721,6 @@ a:hover {
 .uk-child-width-1-4\@m>* {
     width: 23% !important;
 }
-/* Tamj thoiwf */
 .tab button {
     background-color: inherit;
     float: left;
@@ -729,6 +730,12 @@ a:hover {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-  }
-  .tabcontent {
-    display: none;}
+}
+.tabcontent {
+    display: none;
+}
+/* Tam thoi */
+.footer-border {
+    padding-top: 70px;
+    padding-bottom: 1px;
+}

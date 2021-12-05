@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+
+body{
+    font-family: "Mitr",sans-serif;
+}
+
+/* -----------------HEADER---------------------- */
+.Header{
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./Header.webp);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+    background-color: #fff4f2;
+}
+
+.Header-Left{
+    width: 580px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Header-Left>.Pages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header-Left>.Pages>div>a {
+    color: #4d312c;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all .3s ease-out 0s;
+}
+
+.Header-Left> div:hover>a {
+    color: #fe5f41;
+}
+
+.Content{
+    padding-top: 50px;
+    padding-left: 70px;
+}
+
+.Content>h1{
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.Content>p{
+    font-size: 20px;
+}
+
+.Header-Right{
+    margin-right: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.Header-btn1{
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all .3s ease-out 0s;
+}
+
+.Header-btn2{
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: tomato;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 30px;
+    padding: 15px 35px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.Header-btn1:hover{
+    color: tomato !important;
+}
+
+/* -----------------MENU LIST---------------------- */
+#Main-content{
+    margin-top: 70px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#Main-content>.Action{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Main-content>.Action>.Right{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#Main-content>.Action>.Right>div:hover{
+    color: tomato;
+}
+
+#Main-content>.Action>.Search{
+    width: 300px;
+    height: 30px;
+}
+
+#Main-content>.Menu{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#Main-content>.Menu>.Food{
+    margin-bottom: 30px;
+    height: 400px;
+    width: 370px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #888;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Main-content>.Menu>.Food>img{
+    height: 200px;
+    object-fit: cover;
+}
+
+#Main-content>.Menu>.Food>.Type{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#Main-content>.Menu>.Food>.Describe{
+    width: 270px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#Main-content>.Menu>.Food>a{
+    font-size: 18px;
+    font-weight: 700;
+    color: red;
+}
+
+/* -----------------FOOTER---------------------- */
+.BannerFooter{
+    margin-top: 100px;
+    display: flex;
+}
+
+.BannerFooter>img{
+    width: auto;
+    max-width: 25%;
+}
+
+.Footer{
+    height: 340px;
+    padding: 80px 80px;
+    background-color: #fff4f2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer>.Collum1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 420px;
+}
+
+.Footer>.Collum1>img{
+    width: 222px;
+}
+
+.Footer>.Collum1>p{
+    color: #5e5e5e;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: "Raleway",sans-serif;
+}
+
+.Footer>.Collum2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.Footer>.Collum2>div>a{
+    color: #5e5e5e;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.Footer>.Collum2>div>a:hover {
+    color: #fe5f41;
+    text-decoration: underline;
+}
+
+.Footer>.Collum3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 330px;
+    height: 200px;
+}
+
+h1{
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.Footer>.Collum3>div>.Phone1{
+    font-size: 24px!important;
+    color: #fe5f41!important;
+    font-weight: 400!important;
+    font-family: "Raleway",sans-serif;
+}
+
+.Footer>.Collum3>div>.Phone2{
+    font-family: "Raleway",sans-serif;
+    font-size: 14px!important;
+    color: #fe5f41!important;
+}
