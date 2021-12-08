@@ -10,6 +10,7 @@ const menu=[
         type: 'Tuna Steak',
         describe:'Making a reservation at Délicious restaurant is easy and',
         link: './Food2.html',
+        link: './Food2.html',
     },
     {
         image: './Food3.jpg',

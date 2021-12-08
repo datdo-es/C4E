@@ -622,11 +622,6 @@ a:hover {
     min-height: 1px;
 }
 .single-cat {
-    -webkit-transition: all .4s ease-out 0s;
-    -moz-transition: all .4s ease-out 0s;
-    -ms-transition: all .4s ease-out 0s;
-    -o-transition: all .4s ease-out 0s;
-    transition: all .4s ease-out 0s;
     z-index: 1;
     padding: 35px 60px 40px 60px;
     background-color: #fff;
@@ -647,6 +642,7 @@ a:hover {
     -o-transition: all .4s ease-out 0s;
     transition: all .4s ease-out 0s;
     border-radius: 50%;
+    
 }
 .single-cat .cat-img .numbering {
     color: #fff;
@@ -655,9 +651,9 @@ a:hover {
     width: 59px;
     height: 59px;
     line-height: 59px;
-    bottom: 20px;
+    bottom: -10px;
     border-radius: 50%;
-    right: 37px;
+    right: 0px;
     text-align: center;
     margin: 0 auto;
     font-size: 20px;
@@ -738,4 +734,20 @@ a:hover {
 .footer-border {
     padding-top: 70px;
     padding-bottom: 1px;
+}
+.cat-cap{
+    color: #5e5e5e;
+    text-align:center;
+}
+.cat-cap h2{
+    color: #000 !important;
+}
+.btn-slide li a {
+    padding: 5px;
+}
+.flexdefine{
+    display: flex;
+}
+.customer{
+    padding: 50px 0;
 }
