@@ -99,10 +99,10 @@ body{
 }
 
 .Main-content>.Main-content_header{
-    margin-bottom: 20px;
+    height: 60px;
+    border-bottom: 1px solid;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .Main-content>.Main-content_header>.Right{
@@ -111,6 +111,7 @@ body{
     justify-content: space-between;
     font-weight: 700;
     font-size: 25px;
+    color: #000;
 }
 
 .Main-content>.Main-content_header>.Right>a{
@@ -119,7 +120,11 @@ body{
 
 .Main-content>.Main-content_header>.Right>a:hover{
     color: tomato;
-    text-decoration: underline;
+}
+
+.Main-content>.Main-content_header>.Right>a.active{
+    border-bottom: 4px solid;
+    color: tomato;
 }
 
 .Main-content>.Main-content_header>.Search{

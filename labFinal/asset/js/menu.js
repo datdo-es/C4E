@@ -2,7 +2,7 @@ const menu=[
     {
         number: 1,
         type: 'Breakfast',
-        tab: 1,
+        data_food: "1",
         image: './asset/img/1.png',
         name: 'Sandwich',
         describe:'Making a reservation at Délicious restaurant is easy and',
@@ -10,7 +10,7 @@ const menu=[
     {
         number: 2,
         type: 'Dinner',
-        tab: 3,
+        data_food: "3",
         image: './asset/img/1.png',
         name: 'Tuna Steak',
         describe:'Making a reservation at Délicious restaurant is easy and',
@@ -18,7 +18,7 @@ const menu=[
     {
         number: 3,
         type: 'Lunches',
-        tab: 2,
+        data_food: "2",
         image: './asset/img/1.png',
         name: 'Hamburger',
         describe:'Making a reservation at Délicious restaurant is easy and',
@@ -26,7 +26,7 @@ const menu=[
     {
         number: 4,
         type: 'Fastfood',
-        tab: 5,
+        data_food: "5",
         image: './asset/img/1.png',
         name: 'Hamburger',
         describe:'Making a reservation at Délicious restaurant is easy and',
@@ -34,7 +34,7 @@ const menu=[
     {
         number: 5,
         type: 'Breakfast',
-        tab: 1,
+        data_food: "1",
         image: './asset/img/1.png',
         name: 'Tuna Sandwich',
         describe:'Making a reservation at Délicious restaurant is easy and',
@@ -42,7 +42,7 @@ const menu=[
     {
         number: 6,
         type: 'Lunches',
-        tab: 2,
+        data_food: "2",
         image: './asset/img/1.png',
         name: 'Cheese Burger',
         describe:'Making a reservation at Délicious restaurant is easy and',
@@ -50,7 +50,7 @@ const menu=[
     {
         number: 7,
         type: 'Fastfood',
-        tab: 5,
+        data_food: "5",
         image: './asset/img/1.png',
         name: 'Hot Dog',
         describe:'Making a reservation at Délicious restaurant is easy and',
@@ -67,12 +67,13 @@ const object=(array,list_info) => {
         const menus= array[i];
         const menu_info= document.createElement('div');
         menu_info.classList.add('Food');
+        menu_info.setAttribute('id',menus.data_food);
         list_info.appendChild(menu_info);
 
         //IN RA DANH SÁCH MỚI
         menu_info.innerHTML=`
             <img src="${menus.image}" alt="">
-            <div id="${menus.tab}" class="Name">${menus.name}</div>
+            <div  class="Name">${menus.name}</div>
             <div class="Describe">${menus.describe}</div>
             <a style="text-decoration: none;" href="food_detail.html?${menus.number}">Order Now</a>
         `;
@@ -87,10 +88,8 @@ const object=(array,list_info) => {
         list.style.width= 'auto';
     }
 }
-object(menu,list)
 
 //TẠO EVENT TÌM KIẾM
-
 const input= document.querySelector('.Search');
 input.addEventListener('input',(event) => {
     //XÓA DANH SÁCH CŨ
@@ -108,31 +107,35 @@ input.addEventListener('input',(event) => {
     object(temp,list);
 })
 
-// //TẠO TAB LIST
-// const buttons= document.getElementsByClassName('Tab-link');
-// const foods= document.getElementsByClassName('Food');
-// function showcontent(id) {
-//     for(let i=0; i<foods.length; i++){
-//         foods[i].style.display= 'none';
-//     }
-//     document.getElementById(id).style.display= 'block';
-// }
-// let arr= [];
-// for(let i=0; i<menu.length; i++){
-//     if(menu[i].tab==query){
-//         arr= menu[i];
-//     }
-// }
-// for(let i=0; i<buttons.length; i++){
-//     buttons[i].addEventListener('click',() => {
-//         for(let i=0; i<buttons.length; i++){
-//             buttons[i].classList.remove('active');
-//         }
-//         this.className += 'active';
-//         showcontent(arr);
-//     })
-// }
-// showcontent(arr);
+//TẠO TAB LIST
+const buttons= document.getElementsByClassName('Tab-link');
+const foods= document.getElementsByClassName('Food');
+
+for(let i=0; i<buttons.length; i++){
+    buttons[i].addEventListener('click',(element) => {
+        //XÓA DANH SÁCH CŨ
+        let lastchild= list.lastElementChild;
+        while(lastchild){
+            list.removeChild(lastchild);
+            lastchild= list.lastElementChild;
+        }
+
+        //GỌI THẺ TAB
+        let id=element.currentTarget.dataset.food;
+        for(let i=0; i<buttons.length; i++){
+            buttons[i].classList.remove('active');
+        }
+        element.currentTarget.className += ' active';
+
+        //IN SP CỦA TỪNG THẺ
+        const temp= [...menu].filter((menu) => menu.data_food.includes(id));
+        object(temp,list);
+    });
+}
+
+//IN RA TAB ĐẦU TIÊN
+const index= [...menu].filter((menu) => menu.data_food.includes('1'));
+object(index,list);
 
 //TẠO FUNCTION IN RA THÔNG TIN SP
 const inform= (array,info) =>{
@@ -153,12 +156,12 @@ const inform= (array,info) =>{
     `;
 }
 
-//TẠO EVENT IN RA THÔNG TIN SP
+//IN RA THÔNG TIN SP
 const detail= document.querySelector('.Food-detail');
-let index= [];
+let arr= [];
 for(let i=0; i<menu.length; i++){
     if(menu[i].number==query){
-        index= menu[i];
+        arr= menu[i];
     }
 }
-inform(index,detail);
+inform(arr,detail);
