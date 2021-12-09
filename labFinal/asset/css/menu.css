@@ -10,7 +10,7 @@ body{
     height: 450px;
     display: flex;
     justify-content: space-between;
-    background-image: url(./Header.webp);
+    background-image: url(/asset/img/banner-1.png);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: right;
@@ -30,15 +30,17 @@ body{
     align-items: center;
 }
 
-.Header-Left>.Pages>div>a {
+.Header-Left>.Pages>a {
     color: #4d312c;
     font-weight: 600;
     font-size: 16px;
     transition: all .3s ease-out 0s;
+    text-decoration: none;
 }
 
-.Header-Left> div:hover>a {
+.Header-Left>.Pages>a:hover {
     color: #fe5f41;
+    text-decoration: underline;
 }
 
 .Content{
@@ -90,76 +92,138 @@ body{
 }
 
 /* -----------------MENU LIST---------------------- */
-#Main-content{
+.Main-content{
     margin-top: 70px;
     margin-left: 120px;
     margin-right: 120px;
 }
 
-#Main-content>.Action{
-    margin-bottom: 20px;
+.Main-content>.Main-content_header{
+    height: 60px;
+    border-bottom: 1px solid;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-#Main-content>.Action>.Right{
+.Main-content>.Main-content_header>.Right{
     width: 600px;
     display: flex;
     justify-content: space-between;
     font-weight: 700;
     font-size: 25px;
+    color: #000;
 }
 
-#Main-content>.Action>.Right>div:hover{
+.Main-content>.Main-content_header>.Right>a{
+    text-decoration: none;
+}
+
+.Main-content>.Main-content_header>.Right>a:hover{
     color: tomato;
 }
 
-#Main-content>.Action>.Search{
-    width: 300px;
-    height: 30px;
+.Main-content>.Main-content_header>.Right>a.active{
+    border-bottom: 4px solid;
+    color: tomato;
 }
 
-#Main-content>.Menu{
+.Main-content>.Main-content_header>.Search{
+    font-size: 20px;
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: #fae8e5;
+}
+
+.Main-content>.Menu{
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#Main-content>.Menu>.Food{
+.Main-content>.Menu>.Food{
     margin-bottom: 30px;
     height: 400px;
     width: 370px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 5px 20px #888;
+    border: 1px solid #fae8e5;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-#Main-content>.Menu>.Food>img{
+.Main-content>.Menu>.Food:hover{
+    box-shadow: 5px 15px 20px #fff4f2;
+}
+
+.Main-content>.Menu>.Food>img{
     height: 200px;
+    width: auto;
     object-fit: cover;
 }
 
-#Main-content>.Menu>.Food>.Type{
+.Main-content>.Menu>.Food>.Name{
     font-size: 30px;
     font-weight: 700;
 }
 
-#Main-content>.Menu>.Food>.Describe{
+.Main-content>.Menu>.Food>.Describe{
     width: 270px;
     text-align: center;
     font-size: 15px;
 }
 
-#Main-content>.Menu>.Food>a{
+.Main-content>.Menu>.Food>a{
     font-size: 18px;
     font-weight: 700;
     color: red;
+}
+
+/* -----------------FOOD DETAIL---------------------- */
+.Main-content>.Hiden-div{
+    display: none;
+}
+
+.Main-content>.Food-detail{
+    margin: 40px 200px 100px 200px;
+}
+
+.Main-content>.Food-detail>.Food{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.Main-content>.Food-detail>.Food>.Right{
+    display: flex;
+    flex-direction: column;
+}
+
+.Main-content>.Food-detail>.Food>.Right>div{
+    width: 450px;
+    height: 300px;
+}
+
+.Main-content>.Food-detail>.Food>.Right>div>.Name{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Main-content>.Food-detail>.Food>.Right>div>.Describe{
+    font-size: 20px;
+}
+
+.Main-content>.Food-detail>.Food>.Right>button{
+    width: 300px;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: tomato;
 }
 
 /* -----------------FOOTER---------------------- */
