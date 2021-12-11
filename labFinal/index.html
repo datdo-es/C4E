@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/menu.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
 </head>
 <body>
@@ -77,7 +78,7 @@
                         </div>
                         <div class="services-cap">
                             <h5><a href="#">Thịt sạch</a></h5>
-                            <p></p>
+                            <p>Với nguyên liệu được giữ sạch sẽ và bảo quản đúng quy trình để thức ăn luôn tươi ngon</p>
                         </div>
                     </div>
                 </div>
@@ -126,516 +127,39 @@
                     <a href="#" class="btn full-menu f-right">Full Menu</a>
                 </div>
             </div>
-            <div class="row ">
-                <div class="col-12">
-                    <div class="nav-button mb-40">
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-link active" id="nav-one-tab" data-bs-toggle="tab"  onclick="openCity(event, 'nav-one')" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true">Breakfast</a>
-                                <a class="nav-link" id="nav-two-tab" data-bs-toggle="tab"  onclick="openCity(event, 'nav-two')" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false">Lunches</a>
-                                <a class="nav-link" id="nav-three-tab" data-bs-toggle="tab" onclick="openCity(event, 'nav-three')" href="#nav-three" role="tab" aria-controls="nav-three" aria-selected="false">Dinner</a>
-                                <a class="nav-link" id="nav-four-tab" data-bs-toggle="tab"  onclick="openCity(event, 'nav-four')" href="#nav-four" role="tab" aria-controls="nav-four" aria-selected="false">Drinks</a>
-                                <a class="nav-link" id="nav-five-tab" data-bs-toggle="tab" onclick="openCity(event, 'nav-five')" href="#nav-five" role="tab" aria-controls="nav-five" aria-selected="false">Fastfood</a>
+            <section>
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="nav-button mb-40 ">
+                            <section class="main-content">
+                                <section class="main-content_header">
+                                    <div class="right">
+                                        <a class="Tab-link active" href="#?1" data-food="1">Bữa sáng</a>
+                                        <a class="Tab-link" href="#?2" data-food="2">Bữa trưa</button>
+                                        <a class="Tab-link" href="#?3" data-food="3">Bữa tối</a>
+                                        <a class="Tab-link" href="#?4" data-food="4">Đồ uống</a>
+                                        <a class="Tab-link" href="#?5" data-food="5">Tráng miệng</a>
+                                    </div>
+                                    <input class="Search disnone" type="text" placeholder="What do you want to eat?">
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade active show tabcontent" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+                                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m menu">
+                                    <!---JS-->
+                                </ul>
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-next uk-slider-item="next"></a>
                             </div>
-                        </nav>
-    
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade active show tabcontent" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
-                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m">
-                            <li class="textCenter single-cat mb-40 p-1 uk-panel">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat 40mb- p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-next uk-slider-item="next"></a>
-                    </div>
-                </div>
-                <div class="tab-pane fade tabcontent" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
-    
-                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-                        <ul class="uk-slider-items uk-child-width-1-3 uk-child-width-1-4@m">
-                            <li class="textCenter single-cat mb-40 p-1 uk-panel">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                        </ul>
-                    
-                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-next uk-slider-item="next"></a>
-                    </div>
-                </div>
-                <div class="tab-pane fade tabcontent" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab">
-    
-                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-                        <ul class="uk-slider-items uk-child-width-1-3 uk-child-width-1-4@m">
-                            <li class="textCenter single-cat mb-40 p-1 uk-panel">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                        </ul>
-                    
-                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-next uk-slider-item="next"></a>
-                    </div>
-                </div>
-                <div class="tab-pane fade tabcontent" id="nav-four" role="tabpanel" aria-labelledby="nav-four-tab">
-    
-                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-                        <ul class="uk-slider-items uk-child-width-1-3 uk-child-width-1-4@m">
-                            <li class="textCenter single-cat mb-40 p-1 uk-panel">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                        </ul>
-                    
-                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-next uk-slider-item="next"></a>
-                    </div>
-                </div>
-                <div class="tab-pane fade tabcontent" id="nav-five" role="tabpanel" aria-labelledby="nav-five-tab">
-    
-                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-                        <ul class="uk-slider-items uk-child-width-1-3 uk-child-width-1-4@m">
-                            <li class="textCenter single-cat mb-40 p-1 uk-panel">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                            <li class="textCenter single-cat mb-40 p-1">
-                                <div class="cat-img">
-                                    <img src="./asset/img/1.png" alt="">
-                                    <div class="numbering">$20</div>
-                                </div>
-                                <div class="cat-cap">
-                                    <h5><a href="#" tabindex="-1">Tuna steak</a></h5>
-                                    <p>Making a reservation at Délicious restaurant is easy and</p>
-                                    <a href="#" class="browse-btn" tabindex="-1">Order Now</a>
-                                </div>
-                            </li>
-                        </ul>
-                    
-                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-next uk-slider-item="next"></a>
-                    
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
         </div>
     </section>
     <!-------------------Menu Tab--------------------->
@@ -699,82 +223,14 @@
     
     <!-------------------End Customer--------------------->
     <!-------------------Footer--------------------->
-    <div class="row">
-        <div class="col-12">
-            <div class="bannerFooter">
-                <img src="./asset/img/banner-footer-1.png" alt="">
-                <img src="./asset/img/banner-footer-2.png" alt="">
-                <img src="./asset/img/banner-footer-3.png" alt="">
-                <img src="./asset/img/banner-footer-4.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="row paddingFooter">
-                <div class="col-4">
-                    <div class="logoFooter">
-                        <img src="./asset/img/logo-main.png" alt="">
-                    </div>
-                    <div class="contentFooter">
-                        <p>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning laboris nisi ufsit aliquip.</p>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="footerTitle">
-                        <h4>Quick Links</h4>
-                    </div>
-                    <div class="listMenu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="footerTitle">
-                        <h4>Cakes</h4>
-                    </div>
-                    <div class="listMenu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="footerTitle">
-                        <h4>Contact Us</h4>
-                        <p>76/A, Green Lane, Dhanmondi, NYC</p>
-                        <p class="phone">+10 (78) 738-9083</p>
-                        <a class="phone2">restaurco89@gmail.com</a>
-                    </div>
-                </div>
-            </div>
-            <div class="borderFooter">
-                <div class="footer-border">
-                    <div class="row">
-                        <div class="col-12 ">
-                            <div class="footer-copy-right textCenter">
-                                Copyright ©2021 All rights reserved | This template is made with  by <a href="#" style="color: black" target="_blank" rel="nofollow noopener">TEAM ONE</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="footerjs"></div>
     <!-------------------End Footer--------------------->
-    <script src="./asset/js/styleMenu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+    <script src="./asset/js/menu.js"></script>
+    <script src="./asset/js/header.js"></script>
     <script src="./asset/js/tab.js"></script>
+    <script src="./asset/js/footer.js"></script>
 </body>
 </body>
 </html>

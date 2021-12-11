@@ -3,90 +3,112 @@ const menu=[
         number: 1,
         type: 'Breakfast',
         data_food: "1",
-        image: './asset/img/1.png',
-        name: 'Sandwich',
-        describe:'Making a reservation at Délicious restaurant is easy and',
-    },
-    {
+        image: './asset/img/cha-ca-de-vuong.jpg',
+        name: 'Chả cá Đế Vương 1',
+        describe:'Món chả cá có nguồn gốc từ thủ đô Thăng Long Hà Nội, được chế biến từ loại cá lăng tươi ngon cùng với phương châm “Phục vụ khách hàng như Đế Vương”, chắc chắn sẽ làm quý khách hài lòng.',
+        price: 5.60,
+        },
+        {
         number: 2,
-        type: 'Dinner',
+        type: 'Breakfast',
         data_food: "3",
-        image: './asset/img/1.png',
-        name: 'Tuna Steak',
+        image: './asset/img/cha-ca-de-vuong-1.jpg',
+        name: 'Lẩu cá lăng',
         describe:'Making a reservation at Délicious restaurant is easy and',
+        price: 10,
     },
     {
         number: 3,
         type: 'Lunches',
         data_food: "2",
-        image: './asset/img/1.png',
-        name: 'Hamburger',
-        describe:'Making a reservation at Délicious restaurant is easy and',
+        image: './asset/img/bao-tu-ca.jpg',
+        name: 'Bao tử cá',
+        describe:' Chắc hẳn sẽ có khá ít người biết đến những món ăn ngon từ bao tử cá ba sa, tuy nhiên bao tử cá vẫn có thể chế biến được rất nhiều món ngon, vô cùng hấp dẫn và lôi cuốn',
+        price: 5.6,
     },
     {
         number: 4,
-        type: 'Fastfood',
-        data_food: "5",
-        image: './asset/img/1.png',
-        name: 'Hamburger',
-        describe:'Making a reservation at Délicious restaurant is easy and',
+        type: 'Lunches',
+        data_food: "2",
+        image: './asset/img/ca-lang-them.png',
+        name: 'Cá lăng tươi',
+        describe:' Cá lăng lâu nay vẫn là món ăn được các dân nhậu rất ưa thích. Thịt cá lăng có hương vị rất thơm, ngon, bùi và đặc biệt săn chắc.',
+        price: 10.8,
     },
     {
         number: 5,
+        type: 'Fastfood',
+        data_food: "5",
+        image: './asset/img/1.png',
+        name: 'Cháo cá',
+        describe:'Making a reservation at Délicious restaurant is easy and',
+        price: 10,
+    },
+    {
+        number: 6,
         type: 'Breakfast',
         data_food: "1",
         image: './asset/img/1.png',
         name: 'Tuna Sandwich',
         describe:'Making a reservation at Délicious restaurant is easy and',
+        price: 10,
     },
     {
-        number: 6,
+        number: 7,
         type: 'Lunches',
         data_food: "2",
         image: './asset/img/1.png',
         name: 'Cheese Burger',
         describe:'Making a reservation at Délicious restaurant is easy and',
+        price: 10,
     },
     {
-        number: 7,
+        number: 8,
         type: 'Fastfood',
         data_food: "5",
         image: './asset/img/1.png',
         name: 'Hot Dog',
         describe:'Making a reservation at Délicious restaurant is easy and',
+        price: 10,
     },
 ]
 
-const main= document.querySelector('.Main-content');
-const list= document.querySelector('.Menu');
+const main= document.querySelector('.main-content'); //Dư
+const list= document.querySelector('.menu');
 let query = window.location.search.substring(1);
 
 //TẠO FUNCTION IN RA DANH SÁCH MỚI
 const object=(array,list_info) => {
     for(let i=0; i<array.length;i++){
         const menus= array[i];
-        const menu_info= document.createElement('div');
-        menu_info.classList.add('Food');
-        menu_info.setAttribute('id',menus.data_food);
+        const menu_info= document.createElement('li');
         list_info.appendChild(menu_info);
-
+        menu_info.classList.add("textCenter")
+        menu_info.classList.add("mb-40")
+        menu_info.classList.add("single-cat")
+        menu_info.classList.add("p-1")
         //IN RA DANH SÁCH MỚI
         menu_info.innerHTML=`
-            <img src="${menus.image}" alt="">
-            <div  class="Name">${menus.name}</div>
-            <div class="Describe">${menus.describe}</div>
-            <a style="text-decoration: none;" href="food_detail.html?${menus.number}">Order Now</a>
+            <div class="cat-img">
+                <img src="${menus.image}" alt="">
+                <div class="numbering">$${menus.price}</div>
+            </div>
+            <div class="cat-cap">
+                <h5><a href="food_detail.html?${menus.number}" tabindex="-1">${menus.name}</a></h5>
+                <p>${menus.describe}</p>
+                <a href="food_detail.html?${menus.number}" class="browse-btn" tabindex="-1">Chi tiết</a>
+            </div>
         `;
     }
 
     //STYLE
-    const count= list.childElementCount;
-    if(count===2){
-        list.style.width= '800px';
-    }
-    else{
-        list.style.width= 'auto';
-    }
+    // const count= list.childElementCount;
+    // if(count===2){
+    //     list.style.width= '800px';
+    // }
+    // else{
+    //     list.style.width= 'auto';
+    // }
 }
 
 //TẠO EVENT TÌM KIẾM

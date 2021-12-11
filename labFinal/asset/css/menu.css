@@ -59,7 +59,7 @@ body{
     font-size: 20px;
 }
 
-.Header-Right{
+.Header-right{
     margin-right: 30px;
     display: flex;
     align-items: flex-start;
@@ -92,42 +92,46 @@ body{
 }
 
 /* -----------------MENU LIST---------------------- */
-.Main-content{
-    margin-top: 70px;
-    margin-left: 120px;
-    margin-right: 120px;
+.main-content{
+    padding: 0;
+    margin: 0;
 }
 
-.Main-content>.Main-content_header{
-    height: 60px;
+.main-content>.main-content_header{
     border-bottom: 1px solid;
     display: flex;
     justify-content: space-between;
 }
 
-.Main-content>.Main-content_header>.Right{
-    width: 600px;
+.main-content>.main-content_header>.right{
     display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 25px;
-    color: #000;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 
-.Main-content>.Main-content_header>.Right>a{
-    text-decoration: none;
+.main-content>.main-content_header>.right>a{
+    font-family: "Mitr",sans-serif;
+    color: #94817E;
+    font-size: 18px;
+    font-weight: 500;
+    border: 0;
+    padding: 17px 5px;
+    border-bottom: 4px solid transparent;
+    margin-right: 43px;
 }
 
-.Main-content>.Main-content_header>.Right>a:hover{
+.main-content>.main-content_header>.right>a:hover{
     color: tomato;
 }
 
-.Main-content>.Main-content_header>.Right>a.active{
+.main-content>.main-content_header>.right>a.active{
     border-bottom: 4px solid;
     color: tomato;
 }
 
-.Main-content>.Main-content_header>.Search{
+.main-content>.main-content_header>.Search{
     font-size: 20px;
     width: 400px;
     height: 35px;
@@ -135,14 +139,14 @@ body{
     border-color: #fae8e5;
 }
 
-.Main-content>.Menu{
+.main-content>.Menu{
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.Main-content>.Menu>.Food{
+.main-content>.Menu>.Food{
     margin-bottom: 30px;
     height: 400px;
     width: 370px;
@@ -155,69 +159,69 @@ body{
     align-items: center;
 }
 
-.Main-content>.Menu>.Food:hover{
+.main-content>.Menu>.Food:hover{
     box-shadow: 5px 15px 20px #fff4f2;
 }
 
-.Main-content>.Menu>.Food>img{
+.main-content>.Menu>.Food>img{
     height: 200px;
     width: auto;
     object-fit: cover;
 }
 
-.Main-content>.Menu>.Food>.Name{
+.main-content>.Menu>.Food>.Name{
     font-size: 30px;
     font-weight: 700;
 }
 
-.Main-content>.Menu>.Food>.Describe{
+.main-content>.Menu>.Food>.Describe{
     width: 270px;
     text-align: center;
     font-size: 15px;
 }
 
-.Main-content>.Menu>.Food>a{
+.main-content>.Menu>.Food>a{
     font-size: 18px;
     font-weight: 700;
     color: red;
 }
 
 /* -----------------FOOD DETAIL---------------------- */
-.Main-content>.Hiden-div{
+.main-content>.Hiden-div{
     display: none;
 }
 
-.Main-content>.Food-detail{
+.main-content>.Food-detail{
     margin: 40px 200px 100px 200px;
 }
 
-.Main-content>.Food-detail>.Food{
+.main-content>.Food-detail>.Food{
     height: 300px;
     display: flex;
     justify-content: space-between;
     
 }
 
-.Main-content>.Food-detail>.Food>.Right{
+.main-content>.Food-detail>.Food>.right{
     display: flex;
     flex-direction: column;
 }
 
-.Main-content>.Food-detail>.Food>.Right>div{
+.main-content>.Food-detail>.Food>.right>div{
     width: 450px;
     height: 300px;
 }
 
-.Main-content>.Food-detail>.Food>.Right>div>.Name{
+.main-content>.Food-detail>.Food>.right>div>.Name{
     font-size: 40px;
     font-weight: 700;
 }
 
-.Main-content>.Food-detail>.Food>.Right>div>.Describe{
+.main-content>.Food-detail>.Food>.right>div>.Describe{
     font-size: 20px;
 }
 
-.Main-content>.Food-detail>.Food>.Right>button{
+.main-content>.Food-detail>.Food>.right>button{
     width: 300px;
     padding: 10px 30px;
     font-size: 20px;

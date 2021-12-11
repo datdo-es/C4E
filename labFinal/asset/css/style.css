@@ -55,6 +55,9 @@
 .p-1{
     padding: 10px 20px;
 }
+.p-4{
+    padding: 40px 0;
+}
 .p-service{
     padding: 0 10px;
 }
@@ -116,6 +119,15 @@ header{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+}
+.slider2 .imageSlider{
+    width: 50%;
+}
+.slider2 .content{
+    padding-top: 100px;
+}
+.slider2 .imageSlider img{
+    height: 100%;
 }
 .pages .navigation {
     margin: auto;
@@ -189,6 +201,14 @@ li a {
     margin: 0;
 }
 .slider{
+    display: flex;
+    margin-top: -7%;
+    justify-content: center;
+    justify-items: center;
+    background-color: #fff4f2;
+    width: 100%;
+}
+.slider2{
     display: flex;
     margin-top: -7%;
     justify-content: center;
@@ -670,6 +690,7 @@ a:hover {
 .single-cat .cat-cap h5>a{
     font-size: 24px;
     font-weight: 600;
+    height: 47px;
     margin-bottom: 14px;
     display: block;
     -webkit-transition: all .2s ease-out 0s;
@@ -680,6 +701,9 @@ a:hover {
     text-transform: capitalize;
     color: #000000;
 }
+.disnone{
+    display: none;
+}
 .single-cat .cat-cap p {
     -webkit-transition: all .2s ease-out 0s;
     -moz-transition: all .2s ease-out 0s;
@@ -689,6 +713,13 @@ a:hover {
     color: #94817E;
     font-size: 16px;
     margin-bottom: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    -webkit-line-clamp: 3;
+    height: 75px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 .single-cat .cat-cap a {
     color: #1c165c;

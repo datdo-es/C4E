@@ -6,161 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asset/css/menu.css">
     <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
     <title>Menu</title>
 </head>
 <body>
     <!-----------------HEADER---------------------->
-    <div class="Header">
-        <div class="Header-Left">
-            <div class="Pages">
-                <img src="./asset/img/logo-main.png">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="Content">
-                <h1>Food Menu</h1>
-                <p>Making a revervation at Delicious restaurant is easy and takes just a couple of minnutes</p>
-            </div>
+    <div class="head_nav"></div>
+    <!-------------------Banner--------------------->
+    <div class="slider2">
+        <div class="content">
+            <h1>Thực đơn</h1>
+            <p>Đây là toàn bộ thực đơn phục vụ của chúng tôi</p>
         </div>
-        <div class="Header-Right">
-            <a href="#" class="Header-btn1">Book a Table</a>
-            <button class="Header-btn2"><img src="https://img.icons8.com/material-outlined/25/ffffff/phone.png"/>+10 (78) 783 3674</button>
+        <div class="imageSlider">
+            <img src="./asset/img/banner-2.png" alt="">
         </div>
     </div>
-
+    <!-------------------End Banner--------------------->
     <!-----------------MENU LIST---------------------->
-    <section class="Main-content">
-        <section class="Main-content_header">
-            <div class="Right">
-                <a class="Tab-link active" href="#?1" data-food="1">Breakfast</a>
-                <a class="Tab-link" href="#?2" data-food="2">Lunches</button>
-                <a class="Tab-link" href="#?3" data-food="3">Dinner</a>
-                <a class="Tab-link" href="#?4" data-food="4">Drinks</a>
-                <a class="Tab-link" href="#?5" data-food="5">Fastfood</a>
-            </div>
-            <input class="Search" type="text" placeholder="What do you want to eat?">
-        </section>
-        
-        <section class="Menu">
-            <!-- <div id="1" class="Food">
-                <img src="./asset/img/1.png" alt="1">
-                <div class="Name">Sandwich</div>
-                <div class="Describe">Making a reservation at Délicious restaurant is easy and</div>
-                <a style="text-decoration: none;" href="#">Order Now</a>
-            </div>
-            <div id="3" class="Food">
-                <img src="./asset/img/1.png" alt="2">
-                <div class="Name">Tuna Steak</div>
-                <div class="Describe">Making a reservation at Délicious restaurant is easy and</div>
-                <a style="text-decoration: none;" href="#">Order Now</a>
-            </div>
-            <div id="2" class="Food">
-                <img src="./asset/img/1.png" alt="3">
-                <div class="Name">Hamburger</div>
-                <div class="Describe">Making a reservation at Délicious restaurant is easy and</div>
-                <a style="text-decoration: none;" href="#">Order Now</a>
-            </div>
-            <div id="5" class="Food">
-                <img src="./asset/img/1.png" alt="4">
-                <div class="Name">Hamburger</div>
-                <div class="Describe">Making a reservation at Délicious restaurant is easy and</div>
-                <a style="text-decoration: none;" href="#">Order Now</a>
-            </div>
-            <div id="1" class="Food">
-                <img src="./asset/img/1.png" alt="5">
-                <div class="Name">Tuna Sandwich</div>
-                <div class="Describe">Making a reservation at Délicious restaurant is easy and</div>
-                <a style="text-decoration: none;" href="#">Order Now</a>
-            </div>
-            <div id="2" class="Food">
-                <img src="./asset/img/1.png" alt="6">
-                <div class="Name">Cheese Burger</div>
-                <div class="Describe">Making a reservation at Délicious restaurant is easy and</div>
-                <a style="text-decoration: none;" href="#">Order Now</a>
-            </div>
-            <div id="5" class="Food">
-                <img src="./asset/img/1.png" alt="7">
-                <div class="Name">Hot Dog</div>
-                <div class="Describe">Making a reservation at Délicious restaurant is easy and</div>
-                <a style="text-decoration: none;" href="#">Order Now</a>
-            </div> -->
-        </section>
-    </section>
-    
-    <!-----------------FOOTER---------------------->
-    <div class="row">
-        <div class="col-12">
-            <div class="bannerFooter">
-                <img src="./asset/img/banner-footer-1.png" alt="">
-                <img src="./asset/img/banner-footer-2.png" alt="">
-                <img src="./asset/img/banner-footer-3.png" alt="">
-                <img src="./asset/img/banner-footer-4.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="row paddingFooter">
-                <div class="col-4">
-                    <div class="logoFooter">
-                        <img src="./asset/img/logo-main.png" alt="">
+    <div class="container">
+        <div class="p-4">
+            <section class="main-content">
+                <section class="main-content_header">
+                    <div class="right">
+                        <a class="Tab-link active" href="#?1" data-food="1">Bữa sáng</a>
+                        <a class="Tab-link" href="#?2" data-food="2">Bữa trưa</button>
+                        <a class="Tab-link" href="#?3" data-food="3">Bữa tối</a>
+                        <a class="Tab-link" href="#?4" data-food="4">Đồ uống</a>
+                        <a class="Tab-link" href="#?5" data-food="5">Tráng miệng</a>
                     </div>
-                    <div class="contentFooter">
-                        <p>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning laboris nisi ufsit aliquip.</p>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="footerTitle">
-                        <h4>Quick Links</h4>
-                    </div>
-                    <div class="listMenu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="footerTitle">
-                        <h4>Cakes</h4>
-                    </div>
-                    <div class="listMenu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="footerTitle">
-                        <h4>Contact Us</h4>
-                        <p>76/A, Green Lane, Dhanmondi, NYC</p>
-                        <p class="phone">+10 (78) 738-9083</p>
-                        <a class="phone2">restaurco89@gmail.com</a>
-                    </div>
-                </div>
-            </div>
-            <div class="borderFooter">
-                <div class="footer-border">
-                    <div class="row">
-                        <div class="col-12 ">
-                            <div class="footer-copy-right textCenter">
-                                Copyright ©2021 All rights reserved | This template is made with  by <a href="#" style="color: black" target="_blank" rel="nofollow noopener">TEAM ONE</a>
+                    <input class="Search" type="text" placeholder="What do you want to eat?">
+                </section>
+                <!-------------------Menu--------------------->
+                <div class="container">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade active show tabcontent" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+                                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m menu">
+                                    <!---JS-->
+                                </ul>
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #fd8900;" href="#" uk-slidenav-next uk-slider-item="next"></a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-------------------End-Menu--------------------->
+
+            </section>
         </div>
     </div>
+    <!-------------------Footer--------------------->
+    <div class="footerjs"></div>
+    <!-------------------Footer--------------------->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
     <script src="./asset/js/menu.js"></script>
+    <script src="./asset/js/header.js"></script>
+    <script src="./asset/js/tab.js"></script>
+    <script src="./asset/js/footer.js"></script>
 </body>
 </html>
