@@ -20,8 +20,8 @@ header.innerHTML = `
             <div class="buttons">
                 <ul>
                     <li class="button-header">
-                        <a href="#" class="header-btn">Book a Table</a>
-                        <a href="#" class="header-btn2"> <img src="./asset/img/phone-call.png"/>+10 (78) 783 3674</a>
+                        <a href="#" class="header-btn">Đặt bàn ngay</a>
+                        <a href="tel:1900 783 3674 " class="header-btn2"> <img src="./asset/img/phone-call.png"/>+1900 783 3674</a>
                     </li>
                 </ul>
             </div>

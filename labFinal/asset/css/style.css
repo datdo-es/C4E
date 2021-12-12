@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@font-face{src:url(./Beyond\ Infinity\ -\ Demo.ttf);font-family:beyond_infinity_-_demoregular;}
 .container{
     max-width: 1320px;
     margin: auto;
@@ -54,6 +55,9 @@
 }
 .p-1{
     padding: 10px 20px;
+}
+.p-2{
+    padding: 0 20px;
 }
 .p-4{
     padding: 40px 0;
@@ -780,4 +784,54 @@ a:hover {
 }
 .customer{
     padding: 50px 0;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+.title h1{
+    font-family: "Mitr",sans-serif;
+    margin: 0;
+    color: #fe5f41;
+}
+.title h2{
+    font-family: "Raleway",sans-serif;
+    margin: 0;
+}
+.about-content p{
+    width: 50%;
+    margin: auto;
+}
+.sign{
+    font-family: "beyond_infinity_-_demoregular", Sans-serif;
+    font-size: 60px;
+}
+.list-image{
+    background-image: url("/labFinal/asset/img/banner-about-us.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    min-height: 60vh;
+    justify-content: center;
+}
+.list-image h2{
+    color: #fff;
+}
+.split-image{
+    margin: 0;
+    padding: 0;
+    display: inline-table;
+}
+.split-image img{
+    margin: 0;
+    padding: 0;
+    width: 25%;
+}
+.img-row img{
+    max-width: 40%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
 }

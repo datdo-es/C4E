@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+.tabble{
+    background-image: url('/labFinal/asset/img/back.jpg');
+    background-size: 100%;
+}
+.content-box h1{
+    font-size: 58px;
+    margin: 15px 0 30px;
+    color: white;
+}
+.content-box p{
+    font-size: 13px;
+    color: #949494;
+    line-height: 15px;
+    margin-bottom: 80px;
+}
+
+.content-box button{
+    background: #B0E0E6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    padding: 13px 25px;
+    cursor: pointer;
+}
+.content-box button img{
+    width: 25px;
+    margin-left: 20px;
+}
+
+.navbar{
+    width: 80%;
+    margin: 0 auto 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.3);
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+.search-box input{
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: #fff;
+}
+::placeholder{
+    color: #fff;
+    font-size: 9px;
+}
+.search-box img{
+    width: 13px;
+    margin-left: 20px;
+}
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 50px;
+}
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.navbar ul li img{
+    width: 15px;
+    margin-right: 15px;
+}
+.sanpham{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+.noidung{
+    
+    margin-left: 50px;
+    position:absolute;
+    padding-bottom: 70px;
+    z-index: 2;
+    
+}
+.containtable{
+    
+    width: 100%;
+   background-color:white
+}
+
+
+
+.btntable {
+    background: #fe5f41;
+    font-family: "Mitr",sans-serif;
+    text-transform: inherit!important;
+    padding: 22px 32px;
+    color: #fff!important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px!important;
+    font-weight: 500!important;
+    border-radius: 35px;
+    line-height: 1;
+    line-height: 0;
+    cursor: pointer;
+    
+    transition: color .4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+}
+
+.containtable th{
+    background-color:#fe5f41;
+    padding:12px 15px;
+
+}
+
+.containtable td{
+    padding:12px 15px;
+    background-color:#f8f9fa;
+
+}
+
+
+
+
